@@ -9,10 +9,10 @@
     <constant name="struts.devMode" value="true" />
 
 	<package name="/api" extends="struts-default">
-		<action name="index" class="com.cpj.swagger.support.struts2.ApiAction">
+		<action name="index" class="com.cpj.swagger.support.struts2.ApiAction" method="toIndex">
 			<result name="success">/swagger/api.jsp</result>
 		</action>
 		
-		<action name="apis" class="com.cpj.swagger.support.struts2.ApiAction" method="queryApi" />
+		<action name="" class="com.cpj.swagger.support.struts2.ApiAction" method="execute"></action>
 	</package>
 </struts>
